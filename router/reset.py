@@ -9,4 +9,4 @@ reset_router = APIRouter()
 @reset_router.post("/reset", status_code=200)
 def reset():
     reset_accounts()
-    return Response(status_code=200)
+    return Response(bytes("OK", "utf-8"),status_code=200)
